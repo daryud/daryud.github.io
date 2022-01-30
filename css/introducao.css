@@ -1,0 +1,81 @@
+.introducao {
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 4fr 8fr; /* definido como as colunas no grid do layout (no figma) */
+  gap: 140px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.introducao__texto {
+  font-size: 1rem;
+}
+
+.introducao__texto h1 {
+  font-size: 4.375em;
+  line-height: 1.2;
+  position: relative;
+  font-family: "Carter One";
+  color: #141414;
+}
+
+.introducao__texto p {
+  font-size: 1.5em;
+  font-family: Palanquin;
+  color: #535050;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.introducao__texto h1::before {
+  content: "";
+  display: inline-block;
+  background-image: url("/img/Detalhe.svg");
+  width: 0.5em;
+  height: 0.25em;
+  position: absolute;
+  top: 0.79em;
+  right: 100%;
+}
+
+@media (max-width: 1000px) {
+  .introducao {
+    gap: 80px;
+  }
+  .introducao__texto {
+    font-size: 0.8rem;
+  }
+
+  .introducao__texto p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao__texto {
+    font-size: 0.65rem;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .introducao__texto h1::before {
+    width: 0.75em;
+    top: -0.008em;
+    left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .introducao img {
+    display: none;
+  }
+}

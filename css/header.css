@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header__menu a {
+  font-size: 1.125rem;
+  font-family: Palanquin;
+  line-height: 1.3;
+  padding: 10px 20px;
+  color: #141414;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .header__menu {
+    justify-content: center;
+  }
+
+  .header__menu a {
+    background-color: #ebeaea;
+  }
+}
