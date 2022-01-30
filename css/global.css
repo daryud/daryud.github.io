@@ -32,3 +32,11 @@ body {
   word-break: break-all;
   max-width: 4ch;
 }
+
+[href^="#"] {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
